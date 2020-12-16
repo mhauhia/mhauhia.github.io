@@ -1,0 +1,96 @@
+/* Animaation määrittely */
+
+@keyframes eka {
+    0% {
+        top: -100px;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+@keyframes toka {
+    0% {
+        left: -70px;
+    }
+    100% {
+        left: 60px;
+    }
+}
+
+h1 {
+    font-size: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    padding: 10px;
+}
+
+#kappale1 {
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+#kappale2 {
+    letter-spacing: 5px;
+    color: rgb(103, 195, 231);
+    font-size: 10px;
+}
+
+#eka {
+    background-color: lightskyblue;
+    width: 200px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: -3;
+    /* Animaation kohdistus ja pituus */
+    animation-name: eka;
+    animation-duration: 3s;
+}
+
+#toka {
+    position: absolute;
+    left: 60px;
+    top: 65px;
+    background-color: lightseagreen;
+    width: 60px;
+    height: 90px;
+    opacity: 50%;
+    z-index: -2;
+    /* Animaation määrittely */
+    animation-name: toka;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+#kolmas {
+    border: 5px solid darkorange;
+    border-radius: 5px;
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 55px;
+}
+
+.magenta {
+    background-color: darkmagenta;
+    letter-spacing: 5px;
+    padding: 3px;
+    color: white;
+    font-size: 10px;
+}
+
+figure,
+p {
+    padding: 5px;
+}
+
+h1,
+.kappale1,
+.kappale2 {}

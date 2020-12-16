@@ -1,0 +1,64 @@
+/* Mobile first */
+
+
+html {
+    font-size: 62.5%; /* 16px (1em) * 62,5 % = 10px. */
+}
+body {
+    padding: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;   
+}
+p {
+    font-size: 1.3rem;
+}
+/* Määritellään responsiivinen kuva */
+figure { /* resetissä määritelty display:block */
+
+}
+figure img {
+    max-width: 100%;
+}
+figcaption {
+    font-style: italic;
+}
+ /* Lisätään pääelementtien väliin tilaa 10px
+h1, figure, p {
+     margin-bottom: 1rem;
+     }
+*/
+/*body-elementin välittömät lapset*/
+body > * {
+    margin-bottom: 1rem;
+}
+/* Logot figure-tageissa allekkain */
+.parent {
+    
+}
+.parent > * { /* parent-elementin välittömät lapset */
+
+}
+
+/* Mobiilia suuremmat näytöt */
+@media only screen and (min-width: 426px) {
+
+ /* Logot figure-tageissa allekkain*/
+.parent {
+    display: flex; /* flex käyttöön parent-elementin lapsille */
+    flex-direction: row; /* parent-elementin lapset rinnakkain */
+    flex-wrap: nowrap; /* lapset pysyvät yhdellä rivillä */
+    
+}
+.parent > * { /* parent-elementin välittömät lapset */
+
+    flex-grow: 1; /* lapset yhtä leveitä */
+    flex-basis: 0; /* lapsien minimileveys */
+        
+}
+
+}
+

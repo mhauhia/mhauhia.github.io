@@ -1,0 +1,45 @@
+.color-red {
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.color-blue {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.color-green {
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.parent > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+.parent .color-blue {
+    flex-grow: 2;
+}
+.parent .color-green {
+    flex-grow: 1;
+}
+.tupla {
+    flex-grow: 2;
+}
+
+.order-1 {
+    order: 1;
+}

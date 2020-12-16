@@ -1,0 +1,180 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #84C15b;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+
+body {
+    font-family: 'Franklin Gothic book', 'Arial Narrow', Arial, sans-serif;
+}
+
+#h1-otsikko, #h2-otsikko {
+    display: none;
+}
+
+nav {
+    background-color:  #84C15b;
+    margin: 0.5rem;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    color: white;
+}
+
+#menu > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #9DCD7C;
+    border: solid #6B9B49 1px;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#maincontent > * {
+    
+    display: flex;
+    flex-direction: column; 
+}
+
+#vision {
+    
+    display: flex;
+    flex-basis: auto;
+    border: 0.5rem solid white;
+}
+
+#vision-text {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    font-size: 1.3rem;   
+    padding: 1rem; 
+}
+
+#vision-image {
+    flex-grow: 1;
+    padding: 0.5rem;
+    display: none;
+}
+
+figure img {
+    max-width: 100%
+}
+
+
+
+i {
+    float: right;
+}
+
+th {
+    font-weight: bold;
+    text-align: justify;
+}
+
+#specials-title, #events-title, #news-title {
+    flex-grow: 0;
+    background-color: #CBCBCB;
+    display: block;
+    padding: 1rem;
+    margin: 0rem 0rem 0.5rem 0rem;
+}
+
+#boxes {
+    display: flex;
+    background-color: white;
+    padding: 0.5rem;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+#boxes > * {
+    flex-basis: auto;
+    padding: 1rem;
+}
+
+#specials {
+    flex-grow: auto;
+}
+
+#events {
+    flex-grow: auto;
+    
+}
+
+#news {
+    flex-grow: auto;
+    flex-basis: 100%;
+}
+
+footer {
+    padding: 1rem;
+}
+
+.address {
+    color: white;
+}
+
+
+
+
+@media screen and (min-width: 426px) {
+    #menu {
+        flex-direction: row;
+
+    }
+    #vision {
+        flex-direction: row;
+        background-color: beige;
+    }
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+    #boxes > * {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    #vision-image {
+        display: block;
+    }
+
+    #news {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #menu {
+        flex-direction: row;
+    }
+    #vision {
+        flex-direction: row;
+    }
+    #boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #boxes > * {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+    #vision-image {
+        display: block;
+    }
+}

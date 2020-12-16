@@ -1,0 +1,186 @@
+#special {
+    background-color: #6A8087;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.7rem;
+    background-image: url(./images/special-bg.png);
+    background-repeat: repeat-x;
+    background-position: bottom left;
+    width: 950px;
+}
+
+#promo {
+    color: white;
+    font-size: 0.8rem;
+}
+
+#promo-bold {
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wrapper {
+    display: flex;
+    width: 960px;
+    flex-wrap: wrap;
+    /* Väliaikainen väri selkeyden vuoksi */
+    background-color: #F8F2E5;
+    ;
+}
+
+#wrapper>* {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    /* Väliaikainen väri selkeyden vuoksi */
+    background-image: url(./images/grunge.png);
+}
+
+#logo {
+    margin-top: -1rem;
+}
+
+
+
+.solid {
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+
+#ul-menu {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin: 10px;
+    justify-content: space-around;
+}
+
+#nav-title {
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkslategrey;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+#contents {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.headliner {
+    color: #4E443C;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.textcontent {
+    font-size: 0.9rem;
+}
+
+#pretzels {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#main {
+    width: 60%;
+    box-sizing: border-box;
+}
+
+#sidebar {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: #F8F2E5;
+    margin: 1rem;
+}
+
+#sidetext {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.callout {
+    background-color: #F7EBCC;
+    align-items: center;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+#list-pretzels {
+    columns: 2;
+    padding: 1rem;
+}
+
+#list-about {
+    columns: 2;
+    padding: 1rem;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+footer {
+    background-color: #F8F2E5;
+    padding: 1rem;
+    text-align: center;
+}
+
+#copyright {
+    color: #4E443C;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    .nav-description {
+        display: none;
+    }
+
+    #wrapper {
+        order: 1;
+        flex-basis: 100%;
+        width: auto;
+    }
+
+    #contents {
+     
+        flex-wrap: wrap;
+        width: auto;
+        flex-grow: auto;
+    }
+  
+    #sidebar {
+        
+        order: 2;
+        flex-basis: 100%;
+        
+    }
+
+    #footer {
+        order: 3;
+        flex-basis: 100%
+    }
+
+
+
+}
+
+@media screen and (max-width: 550px) {}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        #otsikko {
+            font-size: 1.5rem;
+            padding: 1rem 1rem 0rem 1rem;
+        }
+
+        #headerteksti {
+            padding: 1rem;
+        }
+
+        #sectionteksti {
+            padding: 1rem;
+        }
+
+        #rinnakkain {
+            display: flex;
+            flex-basis: 0%;
+            flex-direction: row;
+            border: black dotted thin;
+        }
+
+        .ylatunniste {
+            border-top:  black dotted thin;
+            border-left:  black dotted thin;
+            border-right:  black dotted thin;
+        }
+
+        #runko {
+            margin: 1rem;
+            /* max-width: 100%; */
+            font-family: Arial, Helvetica, sans-serif
+
+        }
+
+        #footer {
+            border-left: black dotted thin;
+            border-right: black dotted thin;
+            border-bottom: black dotted thin;
+            padding: 1rem;
+        }
+
+       
+        figure img {
+            max-width: 100%;
+        }
+        
+        #kuvanpaikka {
+            padding: 1rem;
+        }
+        
+        @media screen and (max-width:700px) {
+            #rinnakkain {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+</body>
+<script>
+    document.body.id += "runko"
+    var runko = document.getElementById("runko");
+
+    //header
+    var header = document.createElement("header");
+    var h1 = document.createElement("h1");
+    var p1 = document.createElement("p");
+    var p2 = document.createElement("p");
+
+    //section
+    var section = document.createElement("section");
+    var figure = document.createElement("figure");
+    var img = document.createElement("img");
+    
+
+    //Lisätään sisällöt
+    var otsikko = document.createTextNode("Tämä on artikkelin otsikko");
+    var ylatunnisteKappale = document.createTextNode("Ensimmäinen kappale! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu diam nisi. Nulla dolor orci, scelerisque mollis posuere id, molestie vel nulla. Quisque porta tempus sem, vel blandit tortor lacinia eget. Phasellus commodo placerat nibh, at scelerisque quam faucibus nec. Curabitur cursus erat ligula, sit amet tincidunt tortor imperdiet vel. In ut egestas felis, eget dignissim libero. Sed aliquam semper neque at luctus. Cras egestas justo tristique erat consectetur faucibus in ac dui. Ut quis metus consectetur, condimentum enim et, lacinia sem. Suspendisse potenti. Mauris faucibus non lectus quis eleifend.");
+    var sectionKappale = document.createTextNode("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu diam nisi. Nulla dolor orci, scelerisque mollis posuere id, molestie vel nulla. Quisque porta tempus sem, vel blandit tortor lacinia eget. Phasellus commodo placerat nibh, at scelerisque quam faucibus nec. Curabitur cursus erat ligula, sit amet tincidunt tortor imperdiet vel. In ut egestas felis, eget dignissim libero. Sed aliquam semper neque at luctus. Cras egestas justo tristique erat consectetur faucibus in ac dui. Ut quis metus consectetur, condimentum enim et, lacinia sem. Suspendisse potenti. Mauris faucibus non lectus quis eleifend.");
+    
+    var footerTeksti = document.createTextNode("©2020 Markus Hauhia ");
+    
+
+    //footer
+    var footer = document.createElement("footer");
+
+    //Nimetään elementit
+    header.className = "ylatunniste";
+    h1.id = "otsikko";
+    section.id = "rinnakkain";
+    figure.id = "kuvanpaikka";
+    p1.id = "headerteksti";
+    p2.id = "sectionteksti";
+    footer.id = "footer";
+    img.id = "kuva";
+    img.src = "/rakenna-html/js-kuva.jpeg";
+
+
+    //Lisätään sisällöt elementtien sisään
+    h1.appendChild(otsikko);
+    p1.appendChild(ylatunnisteKappale);
+    p2.appendChild(sectionKappale);
+    footer.appendChild(footerTeksti);
+      
+
+    //Lisätään elementit toistensa sisään
+    header.appendChild(h1);
+    header.appendChild(p1);
+    section.appendChild(p2);
+    section.appendChild(figure);
+    figure.appendChild(img);
+
+    runko.appendChild(header);
+    runko.appendChild(section);
+    runko.appendChild(footer);
+    
+
+
+</script>
+
+</html>

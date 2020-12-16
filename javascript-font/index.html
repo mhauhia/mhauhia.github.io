@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontin muuttaminen Javascriptillä</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze&family=Mansalva&family=Roboto&family=Turret+Road&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="runko">
+        <h1>Muuta listan fonttikokoa ja fontin tyyppiä nappeja painamalla</h1>
+        <ol id="lista">
+            <li>Ensimmäinen painallus muuttaa fonttikoon 20px ja fontiksi 'Roboto'</li>
+            <li>Seuraava painallus muuttaa fonttikoon 24px ja fontiksi 'Mansalva'</li>
+            <li>Seuraava painallus muuttaa fonttikoon 28px ja fontiksi 'Grenze'</li>
+            <li>Seuraava painallus muuttaa fonttikoon 32px ja fontiksi 'Turret Road'</li>
+            <li>Seuraava painallus palauttaa fonttikoon 20px ja fontin 'Courier New'</li>
+
+        </ol>
+        
+        <button id="nappula" onClick="increaseFontSize()">Fontin koko</button>
+        <script type="text/javascript" src="./scripts/fontModify.js"></script>
+
+        <button id="nappula2" onClick="changeFontType()">Fontin tyyppi</button>
+        <script type="text/javascript" src="./scripts/fontModify.js"></script>
+
+        <button id="nappula3" onClick="reloadPage()">Reset</button>
+        <script type="text/javascript" src="./scripts/fontModify.js"></script>
+    
+    </div>
+</body>
+
+</html>

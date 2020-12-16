@@ -1,0 +1,140 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 10px;
+    
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem; 
+}
+
+ul {
+    margin-left: 3rem;
+    list-style: disc;
+}
+
+ul li {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    
+
+}
+
+p, li {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+pre {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-family: monospace;
+    margin-left: 1rem;
+}
+
+section {
+    background-color: #bbddee;
+    margin-bottom: 10px;
+    
+}
+/*
+#toka h2 #kolmas h2 {
+    background-color: #88aabb;
+    text-align: right;
+    padding: 10px;
+    text-transform: lowercase;
+    margin: -10px, -10px, 10px, -10px;
+}
+
+*/
+.iso-q {
+    float: left;
+    font-size: 500%;
+    width: 1.2em;
+    text-align: center;
+    padding: 0.1em 0.1em 0;
+    background-color: #568;
+    color: white;
+    border: solid white 1px;
+    border-width: 0 0.2em 0.2em 0;
+    margin: -10 0.5em 0.2em 0;
+    padding: 0 0 0.2em 0;
+}
+
+#toka {
+    border: 1px solid black; 
+}
+
+
+
+div#punch2 {
+    float: left;
+    width: 100px;
+    height: 70px; 
+    text-align: center;
+    background: white; color: black;
+    border: solid black 1px;
+    
+    padding: 0 10px 5px 0; margin: -1px 25px 10px -1px;
+}
+div#punch2 img {
+    height: 70px; width: 100px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px;
+    background-color: white;
+}
+
+#toka h2 {
+    float: right;
+    padding: 10px;
+    background-color: #8CB2C8;
+}
+
+#punch3 {
+    float: right;
+    width: 200px;
+    height: 10px; 
+    text-align: left;
+    background: white; color: black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    
+    padding: 0 10px 5px 0; margin: -1px 25px 10px -1px;
+
+}
+
+#top-punch {
+    float: left;
+    width: 400px;
+    height: 30px; 
+    text-align: center;
+    background: white; color: black;
+    border: solid black 1px;
+    border-width: 0 1px 1px 0; 
+    padding: 0 10px 5px 0; margin: -1px 25px 10px -1px;
+
+}
+
+#kolmas h2 {
+    float: right;
+    padding: 10px;
+    background-color: #8CB2C8;
+}
+
+#kolmas {
+    border: 1px solid black; 
+}

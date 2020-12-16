@@ -1,0 +1,31 @@
+/* tyyli.css */
+
+body {
+background-color: whitesmoke;
+font-family: Open Sans;
+font-size: 14px;
+}
+
+h1 {
+font-family: Open Sans;
+color: orange;
+font-size: 24px;
+text-decoration: underline;
+text-align: center;
+} 
+
+img {
+border-radius: 20px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+figcaption {
+color: purple;
+text-align: center;
+}
+
+footer {
+text-align: center;
+}

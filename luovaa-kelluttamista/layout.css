@@ -1,0 +1,172 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.master-grid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-rows: auto;
+    margin: 0 1rem 2rem 0;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 400px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: gainsboro;
+    background-image: linear-gradient(to bottom right, gainsboro, white);
+    padding: 1em;
+}
+
+.container .heading h1 {
+    font-weight: bolder;
+    letter-spacing: -1px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .text p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+} 
+
+.heading {
+    
+    box-sizing: border-box;
+    grid-area: heading;
+}
+
+.container .image {
+   
+    
+    box-sizing: border-box; 
+}
+
+.image {
+    grid-area: image;
+}
+
+.text {
+    grid-area: text;
+}
+
+.container .image img {
+    padding: 5px;
+    border-left: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+    border-right: solid 1px darkgrey;
+    border-bottom: solid 1px darkgrey;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px darkgrey; 
+    max-width: 100%;
+}
+
+.container .text {
+    
+    
+    box-sizing: border-box;
+}
+
+.grid-config:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.grid-config {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "image heading"
+    "image text";
+    margin: 0 1rem 2rem 0;
+    
+}
+
+.grid-config-reverse {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "heading image"
+    "text image ";
+    margin: 0 1rem 2rem 0;
+}
+
+/* Näitä ei tarvita:
+
+.reverse .heading {
+  
+     
+}
+
+.reverse .text {
+  
+     
+}
+
+.reverse .image {
+ 
+     
+}
+
+.reverse .image img {
+  
+  
+}
+
+*/
+
+@media screen and (max-width: 425px) {
+    body > * {
+        margin: 0;
+    }
+
+    .master-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-rows: 3;
+        grid-template-columns: 0;
+        margin: 0 1rem 2rem 0;
+
+    }
+    
+    .container {
+        min-width: 320px;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (min-width: 426px) and (max-width: 1024px) {
+    
+    body {
+        width: 1200px;
+    }
+
+    .master-grid {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 3;
+        grid-template-rows: auto;
+        margin: 0 1rem 2rem 0;
+
+    }
+    
+    
+}

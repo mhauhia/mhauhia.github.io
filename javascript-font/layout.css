@@ -1,0 +1,74 @@
+body {
+    font-size: 62.5%;
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+ 
+}
+
+h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#runko {
+    background-color: lightgrey;
+    width: 1200px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    
+}
+
+#nappula {
+    position: absolute;
+    top: 475px;
+    background-color: lightskyblue;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+#nappula:hover {
+        transition-duration: 0.4s;
+        background-color: white; 
+        color: black;
+      }
+    
+
+
+#nappula2 {
+    position: absolute;
+    top: 475px;
+    left: 150px;
+    background-color: lightskyblue;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#nappula2:hover {
+    transition-duration: 0.4s;
+    background-color: white; 
+    color: black;
+  }
+
+#nappula3 {
+    position: absolute;
+    top: 475px;
+    left: 270px;
+    background-color: lightskyblue;
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+#nappula3:hover {
+    transition-duration: 0.4s;
+    background-color: white; 
+    color: black;
+  }
